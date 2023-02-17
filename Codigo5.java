@@ -1,3 +1,5 @@
+// Este código pide a un usuario un número para determinar si es mágico. Un número
+// es mágico si su último dígito es 3, 7 ,8 o 9.
 import java.util.Scanner;// Se agregó importación de Scanner
 
 public class Codigo5 {
