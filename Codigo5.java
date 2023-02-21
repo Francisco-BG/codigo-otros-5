@@ -1,5 +1,5 @@
-// Este código pide a un usuario un número para determinar si es mágico. Un número
-// es mágico si su último dígito es 3, 7 ,8 o 9.
+// Este código pide a un usuario un número para determinar si es afortunado. Un número
+// es afortunado si tiene más dígitos 3, 7 ,8 o 9 que otros.
 import java.util.Scanner;// Se agregó importación de Scanner
 
 public class Codigo5 {
@@ -15,20 +15,20 @@ public class Codigo5 {
 	    
 	    while (c > 0) { //se cambió ni por c, para poder hacer la comparación
 		  int digito = (int)(c % 10); // se cambió ni por c
-	      if ((digito == 3) || (digito == 7) || (digito == 8) || (digito == 9)){
+	      if ((digito == 3) || (digito == 7) || (digito == 8) || (digito == 9))
 			afo++;
-	      }else {
+	      else 
 			noAfo++;
 		  
 		  c /= 10; //se cambió ni por c
 	    }
-
-	    if (afo > noAfo) {
+	    //Se eliminaron las llaves por claridad y para que c se decrementara y se pudiera salir del ciclo.
+	    if (afo > noAfo) 
 	      System.out.println("El " + ni + " es un número afortunado.");//se agregó la t de println() cambio c y ni
-	    } else {
+	     else 
 	      System.out.println("El " + ni + " no es un número afortunado.");// se intercambió c y ni
-	    }
+	    
 	 // aquí se escogió ni porque tiene el mismo valor inicial que c pero no cambia a lo largo del programa
-	    }
-	} 
+	    s.close(); // Faltaba cerrar scanner
+	}
 }
